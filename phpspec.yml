@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: AngularLaravel
+        psr4_prefix: AngularLaravel
+        src_path: app
