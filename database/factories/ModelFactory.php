@@ -20,11 +20,13 @@ $factory->define(AngularLaravel\User::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(AngularLaravel\User::class, function (Faker\Generator $faker) {
+$factory->define(AngularLaravel\Client::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
+        'responsible' => $faker->name,
         'email' => $faker->email,
-        'password' => bcrypt(str_random(10)),
-        'remember_token' => str_random(10),
+        'phone' => $faker->phoneNumber,
+        'address' => $faker->word,
+        'obs' => $faker->word,
     ];
 });
