@@ -11,7 +11,7 @@
 |
 */
 
-$factory->define(AngularLaravel\User::class, function (Faker\Generator $faker) {
+$factory->define(AngularLaravel\Entities\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->email,
@@ -20,7 +20,7 @@ $factory->define(AngularLaravel\User::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(AngularLaravel\Client::class, function (Faker\Generator $faker) {
+$factory->define(AngularLaravel\Entities\Client::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'responsible' => $faker->name,
@@ -28,5 +28,17 @@ $factory->define(AngularLaravel\Client::class, function (Faker\Generator $faker)
         'phone' => $faker->phoneNumber,
         'address' => $faker->word,
         'obs' => $faker->word,
+    ];
+});
+
+$factory->define(AngularLaravel\Entities\Project::class, function (Faker\Generator $faker) {
+    return [
+        'owner_id' => rand(1, 10),
+        'client_id ' => rand(1, 10),
+        'name' => $faker->name,
+        'description' => $faker->sentence,
+        'progress' => rand(1, 100),
+        'status' => rand(1, 3),
+        'due_date' => $faker->date('now')
     ];
 });
