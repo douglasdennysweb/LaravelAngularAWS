@@ -144,6 +144,8 @@ return [
         AngularLaravel\Providers\AuthServiceProvider::class,
         AngularLaravel\Providers\EventServiceProvider::class,
         AngularLaravel\Providers\RouteServiceProvider::class,
+        AngularLaravel\Providers\AppServiceProvider::class,
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
 
     ],
 

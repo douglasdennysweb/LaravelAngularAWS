@@ -23,6 +23,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(
+            \AngularLaravel\Repositories\ClientRepository::class,
+            \AngularLaravel\Repositories\ClientRepositoryEloquent::class
+        );
     }
 }
