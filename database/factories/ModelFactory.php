@@ -33,12 +33,12 @@ $factory->define(AngularLaravel\Entities\Client::class, function (Faker\Generato
 
 $factory->define(AngularLaravel\Entities\Project::class, function (Faker\Generator $faker) {
     return [
-        'owner_id' => rand(1, 10),
-        'client_id ' => rand(1, 10),
+        'owner_id' => rand(1, 5),
+        'client_id' => rand(1, 5),
         'name' => $faker->name,
         'description' => $faker->sentence,
         'progress' => rand(1, 100),
         'status' => rand(1, 3),
-        'due_date' => $faker->date('now')
+        'due_date' => $faker->date('now'),
     ];
 });

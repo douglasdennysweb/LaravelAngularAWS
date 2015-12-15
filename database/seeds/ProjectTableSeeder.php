@@ -14,6 +14,6 @@ class ProjectTableSeeder extends Seeder
     {
         Project::truncate();
 
-        factory('AngularLaravel\Entities\Project', 10)->create();
+        factory('AngularLaravel\Entities\Project', 50)->create();
     }
 }

@@ -2,7 +2,6 @@
 
 namespace AngularLaravel\Services;
 
-
 use AngularLaravel\Repositories\ProjectRepository;
 use AngularLaravel\Validators\ProjectValidator;
 use Illuminate\Contracts\Validation\ValidationException;
@@ -10,11 +9,11 @@ use Illuminate\Contracts\Validation\ValidationException;
 class ProjectService
 {
     /**
-     * @var ClientRepository
+     * @var ProjectRepository
      */
     private $repository;
     /**
-     * @var ClientValidator
+     * @var ProjectValidator
      */
     private $validator;
 

@@ -2,6 +2,7 @@
 
 namespace AngularLaravel\Repositories;
 
+use AngularLaravel\Entities\Project;
 use Prettus\Repository\Eloquent\BaseRepository;
 
 class ProjectRepositoryEloquent extends BaseRepository implements ProjectRepository
